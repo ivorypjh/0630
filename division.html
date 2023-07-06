@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let time = 0;
+        let division = ["배수", "+1", "+2", "+3"]
+        //1초(1000) 간격으로 1줄씩 출력
+        setInterval(function(){
+            //time = time + 1
+            time++
+            document.write(division[time % division.length] + "<br/>")
+
+            /*
+            if(time % 4 == 0){
+                document.write("4의 배수" + "<br/>")
+            }
+            if(time % 4 == 1){
+                document.write("배수 + 1" + "<br/>")
+            }
+            ...
+            */
+        }, 1000)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+
+    <link rel = "stylesheet" href = "./css/style.css"/>
+    <script src = "./js/event.js"></script>
+</head>
+
+<body>
+
+    <button onclick = "alert('버튼 눌러짐')">버튼</button>
+    <p id = "pTag">P 태그</p>
+    <div>Div 태그</div>
+    <span>Span 태그</span>
+
+    <script>
+        document.getElementById("pTag").addEventListener("click",
+        function(){
+            alert('P 태그 눌러짐');
+            alert('두번째로 뜨는 창');
+        })
+    </script>
+    
+</body>
+</html>

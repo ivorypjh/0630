@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <script>
+        document.write("화면에 출력하기 <br/>")
+        /*alert("대화 상자로 출력하기")
+        console.log("콘솔에 출력하기")*/
+
+        //let는 변경 가능한 데이터
+        let name = "jongho"
+        //const는 변경 불가능한 데이터
+        const AGE = 25
+
+        //저장된 데이터 출력
+        document.write(name, "<br/>")
+        document.write(name + 3, "<br/>")
+        document.write(AGE, "<br/>")
+        document.write(AGE + 1, "<br/>")
+        //데이터 종류 확인
+        document.write(typeof name, "<br/>")
+        document.write(typeof AGE, "<br/>")
+        //undefined와 null
+        let test
+        document.write(test, "<br/>")
+        let nullTest = null
+        document.write(nullTest, "<br/>")
+        
+    </script>
+</body>
+</html>
